@@ -1,1 +1,1 @@
-# Rejouice-Website
+# Rejouice Website
