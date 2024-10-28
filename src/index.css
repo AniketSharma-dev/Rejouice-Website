@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'NBInternationalProBoo';
+    src: url('./assets/Fonts/NBInternationalProBoo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RejouiceHeadline';
+    src: url('./assets/Fonts/Rejouice-Headline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'NBInternationalProBoo', sans-serif;
+    /* Default font */
+}
+
+h1,
+h2,
+h3,
+.headline,
+span {
+    /* Use for headings or specific elements */
+    font-family: 'RejouiceHeadline', sans-serif;
+}
