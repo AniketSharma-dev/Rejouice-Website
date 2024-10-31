@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
-    const about = useRef(null);
+const Info = () => {
+    const info = useRef(null);
     const lineRefs = useRef([]);
     const lineRef = useRef(null);
 
@@ -25,7 +25,7 @@ const About = () => {
             duration: 1,
             ease: Expo.easeInOut,
             scrollTrigger: {
-                trigger: about.current,
+                trigger: info.current,
                 start: "top 70%", // Start animation when section reaches 70% of viewport height
                 end: "top 50%",   // End animation at 50%
                 scrub: 2,         // Smooth scrolling effect
@@ -39,7 +39,7 @@ const About = () => {
             duration: 1,
             ease: Expo.easeInOut,
             scrollTrigger: {
-                trigger: about.current,
+                trigger: info.current,
                 start: "top 60%",
                 end: "top 40%",
                 scrub: 2,
@@ -51,10 +51,9 @@ const About = () => {
 
 
     return (
-        <div ref={about} className="w-full h-screen flex flex-col justify-start items-center px-11 py-20 select-none">
-            <div className="w-full flex justify-between items-center text-[1.6rem] mb-2 overflow-hidden">
-                <h4 className="translate-y-full" ref={addToLineRefs}>Tomorrow’s Brands, Today™</h4>
-                <h4 className="translate-y-full" ref={addToLineRefs}>Paris / San Diego</h4>
+        <div ref={info} className="w-full h-screen flex flex-col justify-start items-center px-11 py-20 select-none">
+            <div className="w-full flex justify-start items-center text-[1.6rem] mb-2 overflow-hidden">
+                <h4 className="translate-y-full" ref={addToLineRefs}>We operate on a simple philosophy: <br />Quality over quantity.</h4>
             </div>
 
             {/* Animated line */}
@@ -63,26 +62,26 @@ const About = () => {
             {/* Divided Paragraph for Line Animation */}
             <div className="pt-1 text-[4.1rem] tracking-[-0.013em] leading-[1.07] overflow-hidden">
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the power of narrative, design &
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We partner with up to 5 clients each year.
                 </p>
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    technology to transform founder's visions into
+                    This allows intense focus on the transformation
                 </p>
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    remarkable brands. We focus on premium, luxury
+                    and launch of your brand by our very best team,
                 </p>
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    and tech brands. We also offer two engagement
+                    which is the only team we have.&nbsp; We specialize in
                 </p>
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    models, Agency & Venture. Your vision, your
+                    working with startups that are revolutionizing
                 </p>
                 <p ref={addToLineRefs} className="translate-y-full opacity-0">
-                    choice.
+                    their industries.
                 </p>
             </div>
         </div>
     );
 };
 
-export default About;
+export default Info;
