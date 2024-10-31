@@ -1,12 +1,14 @@
 import React from 'react'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
+import Hero from './pages/Hero/Hero'
+import About from './pages/About/About'
+import Service from './pages/Service/Service'
 
 const App = () => {
   return (
     <>
-    <Hero/>
-    <About/>
+      <Hero />
+      <About />
+      <Service/>
     </>
   )
 }

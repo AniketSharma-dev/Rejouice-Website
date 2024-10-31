@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import videoSrc from "../../assets/Video/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4";
 import gsap from "gsap";
 
