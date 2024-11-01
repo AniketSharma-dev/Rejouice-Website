@@ -28,7 +28,7 @@ const Seats = () => {
         // Rotate the SVG to move the dot along the circle path
         timeline.to(
             ".dotSvg",
-            // { rotation: -90 },
+            { rotation: -90 },
             // { rotation: 135 }, // Start the rotation at 135 degrees
             { rotation: 370, duration: 2.8, ease: "power2.out" } // Rotate 235 degrees from the initial 135
         );
