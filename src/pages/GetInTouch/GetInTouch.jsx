@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay} from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,13 +74,12 @@ const Strategy = () => {
             <Swiper
                 slidesPerView={4}   // Show 4 slides at a time
                 spaceBetween={25}    // Space between slides
-                loop={true} 
+                loop={true} // Enable infinite loop
                 grabCursor={true}
                 autoplay={{          // Enable autoplay
                     delay: 1000,     // Delay between transitions in milliseconds
                     disableOnInteraction: false, // Autoplay continues after user interactions
-                }} 
-                auto        // Enable infinite loop
+                }}
                 modules={[Autoplay]}
                 className="mySwiper w-full flex items-end justify-center relative -top-20  "
             >

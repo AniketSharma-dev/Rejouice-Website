@@ -1,12 +1,23 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({textRef}) => {
+ 
   return (
     <>
-    <nav className="flex justify-between items-center">
-        <h3 className="text-2xl" >The Venture Agency․</h3>
+      <nav className="flex justify-between items-center">
+        <h3 className="text-2xl flex space-x-2" >
+          {["The", "Venture", "Agency․™"].map((word, index) => (
+            <span
+              key={index}
+              ref={(el) => (textRef.current[index] = el)}
+              className="inline-block translate-x-full"
+            >
+              {word}
+            </span>
+          ))}
+        </h3>
         <h3 className="text-2xl" >Menu</h3>
-    </nav>
+      </nav>
     </>
   )
 }

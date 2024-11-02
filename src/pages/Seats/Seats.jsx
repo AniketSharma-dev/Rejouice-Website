@@ -47,7 +47,7 @@ const Seats = () => {
                 start: "top 50%",
                 end: "top 20%",
                 scrub: 2,
-                markers: true,
+                // markers: true,
             }
         });
 
