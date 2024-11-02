@@ -102,7 +102,7 @@ const Seats = () => {
                     height: '98px', // Adjust as necessary
                 }}
             >
-                <div className="absolute inset-0 bg-[#0E0E0E] text-[#FFFCF1] flex items-center justify-center rounded-full transform rotate-[-45deg]">
+                <div className="absolute inset-0 bg-[#0E0E0E] text-[#FFFCF1] flex items-center justify-center rounded-full">
                     <span className="text-[16px]"><span>Take One!</span></span>
                 </div>
             </div>
