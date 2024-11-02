@@ -94,16 +94,16 @@ const Seats = () => {
             <div
                 aria-hidden="true"
                 ref={cursor}
-                className="absolute pointer-none z-20" // Make sure it's positioned absolutely
+                className="absolute pointer-none z-20 top-0 left-0" // Make sure it's positioned absolutely
                 style={{
-                    transform: 'translate(-50%, -50%) scale(0)', // Centering and initially hidden
+                    // transform: 'translate(-50%, -50%) scale(0)', // Centering and initially hidden
                     opacity: 0,
                     width: '98px',  // Adjust as necessary
                     height: '98px', // Adjust as necessary
                 }}
             >
                 <div className="absolute inset-0 bg-[#0E0E0E] text-[#FFFCF1] flex items-center justify-center rounded-full">
-                    <span className="text-[16px]"><span>Take One!</span></span>
+                    <span className="text-[16px] select-none"><span>Take One!</span></span>
                 </div>
             </div>
 
