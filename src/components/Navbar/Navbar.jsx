@@ -5,7 +5,7 @@ const Navbar = ({textRef}) => {
   return (
     <>
       <nav className="flex justify-between items-center">
-        <h3 className="text-2xl flex space-x-2" >
+        <h3 className="text-2xl flex space-x-2 cursor-pointer" >
           {["The", "Venture", "Agency․™"].map((word, index) => (
             <span
               key={index}
@@ -16,7 +16,7 @@ const Navbar = ({textRef}) => {
             </span>
           ))}
         </h3>
-        <h3 className="text-2xl" >Menu</h3>
+        <h3 className="text-2xl hover-underline-animation left" >Menu</h3>
       </nav>
     </>
   )

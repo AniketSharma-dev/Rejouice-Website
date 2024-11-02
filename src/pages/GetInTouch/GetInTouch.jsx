@@ -64,7 +64,9 @@ const Strategy = () => {
                 <h2 ref={addToLineRefs} className="translate-y-full text-[8.1rem] font-medium">Get in touch.</h2>
                 <h2 ref={addToLineRefs} className="translate-y-full cursor-pointer">
                     <span className="text-black -scale-x-100 text-3xl mr-2 font-thin inline-block">↵</span>{" "}
+                     <b className="font-thin hover-underline-animation left after:bg-black after:h-[1px]">
                     Contact
+                     </b>
                 </h2>
             </div>
 
@@ -85,7 +87,7 @@ const Strategy = () => {
             >
                 {images.map((src, index) => (
                     <SwiperSlide key={index}>  {/* Ensure the slide takes full height and aligns items at the bottom */}
-                        <img src={src} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover" />
+                        <img src={src} alt={`Slide ${index + 1}`} className="w-[400px] h-auto object-cover" />
                     </SwiperSlide>
                 ))}
             </Swiper>

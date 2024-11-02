@@ -41,7 +41,10 @@ const ServiceCards = () => {
                     <span className="text-black -scale-x-100 text-3xl mr-2 font-thin inline-block">
                         ↵
                     </span>{" "}
+                    <b className="font-thin hover-underline-animation left after:bg-black after:h-[1px]">
+
                     See the work
+                    </b>
                 </h2>
             </div>
             <div className="w-full h-full flex justify-center items-center gap-4">
