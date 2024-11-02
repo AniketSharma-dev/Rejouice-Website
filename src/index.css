@@ -42,6 +42,9 @@ span {
     opacity: 0;
     transition: 0.5s;
 }
+.swiper-wrapper{
+    align-items: end;
+}
 
 
 .lineEffect {
