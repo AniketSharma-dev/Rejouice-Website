@@ -91,6 +91,17 @@ const Strategy = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="w-full min-h-[65vh] relative p-[3vw] flex justify-center items-center flex-col gap-3">
+                <div className="text-center flex justify-center items-center gap-4">
+                    <h4 className='text-center text-base flex justify-center items-center gap-1'>
+                    We’re uniquely built
+                    </h4>
+                    <span className="text-black -rotate-90 text-xl iblock align-y:middle transform rotate:-90deg">↵</span>
+                </div>
+                <div className="text-center">
+                    <h2 ref={addToLineRefs} className="hoverEffect relative overflow-hidden pb-2 text-black text-6xl">About us</h2>
+                </div>
+            </div>
         </div>
     );
 };
