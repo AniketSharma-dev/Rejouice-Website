@@ -11,12 +11,16 @@ const Seats = () => {
     const handleMouseMove = (event) => {
         const cursorElement = cursor.current;
 
-        // Update cursor position based on mouse position
+        // Calculate center position
+        const cursorWidth = 98; // Width of the cursor
+        const cursorHeight = 98; // Height of the cursor
+
+        // Update cursor position based on mouse position, centering it
         gsap.to(cursorElement, {
-            x: event.clientX, // Set based on mouse X position
-            y: event.clientY, // Set based on mouse Y position
+            x: event.clientX - cursorWidth / 2, // Center the cursor horizontally
+            y: event.clientY - cursorHeight / 2, // Center the cursor vertically
             duration: 0.1,
-            ease: "power2.out",
+            ease: "power2.easeInOut",
         });
     };
 
@@ -25,7 +29,7 @@ const Seats = () => {
             scale: 1,
             opacity: 1,
             duration: 0.3,
-            ease: "power2.out",
+            ease: "power2.easeInOut",
         });
     };
 
@@ -34,12 +38,11 @@ const Seats = () => {
             scale: 0,
             opacity: 0,
             duration: 0.3,
-            ease: "power2.out",
+            ease: "power2.easeInOut",
         });
     };
 
     useEffect(() => {
-        // GSAP timeline and ScrollTrigger setup
         const timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: seatsRef.current,
@@ -94,9 +97,9 @@ const Seats = () => {
             <div
                 aria-hidden="true"
                 ref={cursor}
-                className="absolute pointer-none z-20 top-0 left-0" // Make sure it's positioned absolutely
+                className="absolute pointer-none z-20 top-0 left-0"
                 style={{
-                    // transform: 'translate(-50%, -50%) scale(0)', // Centering and initially hidden
+                    transform: 'translate(-50%, -50%) scale(0)', // Centering and initially hidden
                     opacity: 0,
                     width: '98px',  // Adjust as necessary
                     height: '98px', // Adjust as necessary
