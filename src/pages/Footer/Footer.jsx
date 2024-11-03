@@ -23,7 +23,6 @@ const Footer = () => {
             trigger:svgContainerref.current,
             start: "top 30%",
             end: "top 10%",
-            markers:true,
             scrub: 1,
         },
       },
