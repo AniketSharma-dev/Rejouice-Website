@@ -34,7 +34,7 @@ const AboutLink = () => {
                     <span className="text-black -rotate-90 text-xl iblock align-y:middle transform rotate:-90deg">↵</span>
                 </div>
                 <div className="text-center overflow-hidden">
-                    <h2 ref={lineRef} className="hoverEffect relative overflow-hidden pb-2 translate-y-full  text-black text-6xl">About us</h2>
+                    <h2 ref={lineRef} className="lineEffect relative overflow-hidden pb-2 translate-y-full  text-black text-6xl">About us</h2>
                 </div>
             </div>
         </>

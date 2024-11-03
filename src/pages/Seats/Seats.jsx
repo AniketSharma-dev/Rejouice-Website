@@ -44,7 +44,7 @@ const Seats = () => {
         const timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: seatsRef.current,
-                start: "top 50%",
+                start: "top 30%",
                 end: "top 20%",
                 scrub: 2,
                 // markers: true,
@@ -57,7 +57,7 @@ const Seats = () => {
             rotation: 215,
             transformOrigin: "50% 50%",
             duration: 4,
-            ease: "power2.easeInOut",
+            ease: "expo.easeInOut",
             onUpdate: () => {
                 const rotation = gsap.getProperty(".dotSvg", "rotation");
                 const offset = 308 - (rotation / 360) * 308;

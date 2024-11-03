@@ -17,7 +17,7 @@
     font-style: normal;
 }
 
-li{
+li {
 
     font-family: 'NBInternationalProBoo', sans-serif;
 }
@@ -54,7 +54,7 @@ span {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color:#FAF8F3;
     transition: transform 0.25s ease-out;
 }
 
@@ -83,43 +83,35 @@ span {
 
 
 .lineEffect {
-    -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 2px;
-    position: relative;
-    display: block;
+    -webkit-text-stroke-color:#FAF8F3;
+    /* -webkit-text-stroke-width: 0.2px; */
 }
 
-.lineEffect::before {
+.lineEffect::before,
+.lineEffect::after {
     content: '';
-    width: 100%;
+    width: 0%;
     height: 2px;
     position: absolute;
-    background-color: black;
-    bottom: 7px;
+    bottom: 5px;
     z-index: -1;
-    transition: transform 0.5s ease;
+    background-color: #000;
 }
 
 .lineEffect::before {
-    left: 0;
-
-    /* transform: scaleX(0); */
-    /* transition-delay: 0.5s; */
+    width: 100%;
+    right: 0;
+    transition: width 0.25s ease-out;
 }
 
-/* 
 .lineEffect::after {
-    right: 0;
-    transition-delay: 0.5s;
-    transform: scaleX(1);
-} */
+    transition: width 0.35s ease-in-out;
+    left: 0;
+}
 
-/* .lineEffect:hover::before {
-    transform: scaleX(1);
-    transition-delay: 0.5s;
-} */
-
-/* .lineEffect:hover::after {
-    transform: scaleX(0);
-    transition-delay: 0.5s;
-} */
+.lineEffect:hover::before {
+    width: 0%;
+}
+.lineEffect:hover::after {
+    width: 100%;
+}

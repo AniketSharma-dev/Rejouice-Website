@@ -84,7 +84,7 @@ const Strategy = () => {
                     disableOnInteraction: false, // Autoplay continues after user interactions
                 }}
                 modules={[Autoplay]}
-                className="mySwiper w-full flex items-end justify-center relative -top-20  "
+                className="mySwiper w-full flex items-end justify-center relative -top-11  "
             >
                 {images.map((src, index) => (
                     <SwiperSlide key={index}>  {/* Ensure the slide takes full height and aligns items at the bottom */}

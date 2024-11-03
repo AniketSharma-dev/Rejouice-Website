@@ -27,8 +27,8 @@ const Service = () => {
                 ease: Power3.easeInOut,
                 scrollTrigger: {
                     trigger: headingRef.current,
-                    start: 'top 60%', // Start when heading reaches 60% of viewport
-                    end: 'top 45%', // End when heading reaches 45%
+                    start: 'top 70%', // Start when heading reaches 60% of viewport
+                    end: 'top 65%', // End when heading reaches 45%
                     scrub: 1,
                 },
             }
@@ -45,8 +45,8 @@ const Service = () => {
                     <span className="text-black -rotate-90 text-xl iblock align-y:middle transform rotate:-90deg">↵</span>
                 </div>
                 <div className="flex justify-center items-center flex-col">
-                    <h2 ref={addToLineRefs} className="hover-underline-animation left w-fit  relative overflow-hidden pb-2 text-black text-7xl">Explore Our Service</h2>
-                    <h2 ref={addToLineRefs} className="hover-underline-animation left w-fit  relative overflow-hidden pb-2 text-black text-7xl">& Engagement Models</h2>
+                    <h2 ref={addToLineRefs} className="lineEffect w-fit relative font-medium pb-2 text-black text-7xl">Explore Our Service</h2>
+                    <h2 ref={addToLineRefs} className="lineEffect w-fit relative font-medium pb-2 text-black text-7xl">& Engagement Models</h2>
                 </div>
             </div>
             <ServiceCards />
