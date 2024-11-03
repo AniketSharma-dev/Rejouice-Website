@@ -142,7 +142,7 @@ const Hero = () => {
               </div>
               <div ref={(el) => (svgRefs.current[3] = el)} className="opacity-0 absolute top-0 left-0 w-full h-auto ">
                 <svg className="w-full" viewBox="0 0 1390 218" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m 313.469,120.144 c 0.797,-5.967 1.196,-11.536 1.196,-17.503 -5.74609,1.08665 -7.04383,17.53827 -1.196,17.503 z m 8.539,94.674 h 20.727 c 42.651,0 88.49,-27.05 88.49,-92.685 V 5.58032 H 396.148 V 119.348 c 0,39.779 -20.329,61.26 -52.615,61.26 h -21.525 z" fill="#fffcf1" id="path132"></path>
+                  <path d="m 313.469 120.144 z m 8.539 94.674 h 20.727 c 42.651 0 88.49 -27.05 88.49 -92.685 V 5.5803 H 396.148 V 119.348 c 0 39.779 -20.329 61.26 -52.615 61.26 h -21.525 z" fill="#fffcf1" id="path132"></path>
                 </svg>
               </div>
               <div ref={(el) => (svgRefs.current[4] = el)} className="opacity-0 absolute top-0 left-0 w-full h-auto">

@@ -7,6 +7,7 @@ import Strategy from './pages/Strategy/Strategy';
 import Seats from './pages/Seats/Seats';
 import GetInTouch from './pages/GetInTouch/GetInTouch';
 import Loader from './components/loader';
+import Footer from './pages/Footer/Footer';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ const App = () => {
           <Seats />
           <Strategy />
           <GetInTouch />
+          <Footer/>
         </>
       )}
     </>
