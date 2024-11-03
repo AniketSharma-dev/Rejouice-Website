@@ -62,7 +62,7 @@ const Footer = () => {
                     <h2 style={{ display: "Block", }} className="after:h-[1px] w-fit cursor-pointer hover-underline-animation left">©2023 legal</h2>
                 </div>
             </div>
-            <div ref={svgContainerref} className="relative w-full h-[50vh]">
+            <div ref={svgContainerref} className="relative w-full h-[40vh]">
                 <div className="w-full h-fit absolute z-10 bottom-0 pointer-events-none select-none">
                     <div className="flex h-fit justify-center items-center">
                         <div className="absolute bottom-0 w-full px-5 py-5 flex justify-center items-center md:block">
